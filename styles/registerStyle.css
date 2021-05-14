@@ -1,0 +1,71 @@
+:root {
+    --color-background: #D0AF84;
+    --color-text: #966C3B;
+    --color-box: #FFE6CA;
+    --color-title: var(--color-box);
+    --color-input: #dbc1a3;
+}
+
+#content-update {
+    display: flex;
+    width: 70rem;
+    height: 30rem;
+    margin-top: 6rem;
+    flex-direction: column;
+    background-color: var(--color-box);
+}
+
+#total-update {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+#update-name {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+}
+
+#update-quantity {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    margin-top: 2rem;
+}
+
+label {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+input {
+    font-size: 1.5rem;
+    color: var(--color-text);
+    border: none;
+    background-color: var(--color-input);
+    height: 2.5rem;
+}
+
+
+#update-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+
+#save-button {
+    font-size: 1.7rem;
+    border: none;
+    cursor: pointer;
+    overflow:  hidden;
+    background-color: transparent;
+    color: var(--color-text);
+}
+
+#back-button {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 1.7rem;
+}

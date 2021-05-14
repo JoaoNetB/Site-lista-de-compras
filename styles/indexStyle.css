@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-background: #D0AF84;
+    --color-text: #966C3B;
+    --color-box: #FFE6CA;
+    --color-title: var(--color-box);
+}
+
+body {
+    background-color: var(--color-background);
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-text);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.title {
+    color: var(--color-title);
+    font-size: 2rem;
+    margin: 2rem 0 5rem 0;
+    width: 100%;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    width: 100vh;
+    flex-direction: column;
+    background-color: var(--color-box);
+}
+.total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0.5rem 0 0 0rem;
+   
+}
+
+.card h2 {
+    font-size: 1rem;
+}
+
+.card p {
+    font-size: 1.5rem;
+    margin-top: 0.7rem;
+}
+
+.product-name {
+    width: 80%;
+    height: 4.5rem;
+    
+}
+
+.product-quantity {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.last-line {
+    background-color: var(--color-background);
+    width: 90%;
+    height: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+#add-button {
+    display: flex;
+    flex-direction:row-reverse;
+    height: 15rem;
+}
+
+#add-button a{
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 1.5rem;
+    margin:  2rem 3.5rem 0 0;
+    text-align: right;
+
+}
+
+/*#sure-button{
+    background-color: var(--color-background);
+    width: 30rem;
+    height: 150px;
+    position: relative;
+    margin-top: -130px;
+    margin-left: 50%;
+  
+    
+}*/
+
+@media screen and (max-width: 1130) {
+    .container {
+        height: 100px;
+    }
+}
