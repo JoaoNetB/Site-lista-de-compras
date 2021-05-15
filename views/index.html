@@ -41,7 +41,7 @@
                                 <img src="../images/Union.svg" alt="botão editar">
                             </a>
 
-                            <button class="delete-button" title="deletar item">
+                            <button class="delete-button" onclick="stateDelete('choose-delete')" title="deletar item">
                                 <img src="../images/Vector.svg" alt="botão deletar">
                             </button>
                         </div>
@@ -70,7 +70,7 @@
                                 <img src="../images/Union.svg" alt="botão editar">
                             </a>
 
-                            <button class="delete-button" title="deletar item">
+                            <button class="delete-button" onclick="stateDelete('choose-delete')" title="deletar item">
                                 <img src="../images/Vector.svg" alt="botão deletar">
                             </button>
                         </div>
@@ -85,21 +85,17 @@
                     </a>
                 </div>
 
+                <div id="choose-delete" style="display: none;">
+                    <h1>Você tem certeza que quer deletar esse item?</h1>
+                    <button class="alternative-delete">Sim</button>
+                    <button class="alternative-delete">Não</button>
+                </div>
+
             </div>
         </main>
     </div>
-    <!--
-    <div id="sure-button">
-        <div id="box-select">
-            <h1>Você certeza que quer excluir esse item?</h1>
 
-            <div id="choice-buttons">
-                <button id="yes-button">Sim</button>
-                <button id="no-button">Não</button>
-            </div>
-        </div>
-    </div>
-    -->
+    <script src="../Scripts/index.js"></script>
 </body>
 
 </html>
