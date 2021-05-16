@@ -1,9 +1,8 @@
 :root {
-    --color-background: #D0AF84;
-    --color-text: #966C3B;
-    --color-box: #FFE6CA;
-    --color-title: var(--color-box);
-    --color-input: #dbc1a3;
+    --color-background: white;
+    --color-text: #636363;
+    --color-title: black;
+    --color-input: var(--color-background);
 }
 
 #content-update {
@@ -12,7 +11,8 @@
     height: 30rem;
     margin-top: 6rem;
     flex-direction: column;
-    background-color: var(--color-box);
+    background-color: var(--color-background);
+    border: solid 1px;
 }
 
 #total-update {
@@ -43,7 +43,7 @@ label {
 input {
     font-size: 25px;
     color: var(--color-text);
-    border: none;
+    border: solid 1px var(--color-title);
     background-color: var(--color-input);
     height: 2.5rem;
 }
@@ -61,12 +61,12 @@ input {
     cursor: pointer;
     overflow:  hidden;
     background-color: transparent;
-    color: var(--color-text);
+    color: var(--color-title);
 }
 
 #back-button {
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--color-title);
     font-size: 1.7rem;
 }
 

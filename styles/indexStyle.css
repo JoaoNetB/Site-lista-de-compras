@@ -5,17 +5,16 @@
 }
 
 :root {
-    --color-background: #D0AF84;
-    --color-text: #966C3B;
-    --color-box: #FFE6CA;
-    --color-title: var(--color-box);
+    --color-background: white;
+    --color-text: #636363;
+    --color-title: black;
 }
 
 body {
     display: flex;
     background-color: var(--color-background);
     font-family: 'Roboto', sans-serif;
-    color: var(--color-text);
+    color: var(--color-title);
 }
 
 .container {
@@ -34,10 +33,11 @@ body {
 }
 
 .content {
+    border: solid 2px;
     display: flex;
     width: 100vh;
     flex-direction: column;
-    background-color: var(--color-box);
+    background-color: var(--color-background);
 }
 .total {
     display: flex;
@@ -60,6 +60,7 @@ body {
 .card p {
     font-size: 1.5rem;
     margin-top: 0.7rem;
+    color: var(--color-text);
 }
 
 .product-name {
@@ -80,7 +81,7 @@ body {
 }
 
 .last-line {
-    background-color: var(--color-background);
+    background-color: var(--color-title);
     width: 90%;
     height: 0.2rem;
     margin-bottom: 1rem;
@@ -102,7 +103,7 @@ body {
 
 #add-button a{
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--color-title);
     font-size: 1.5rem;
     margin:  2rem 3.5rem 0 0;
     text-align: right;
@@ -115,8 +116,8 @@ body {
     position: absolute;
     top: 20rem;
     align-items: center;
-    background-color: var(--color-box);
-    border: solid var(--color-background);
+    background-color: var(--color-background);
+    border: solid 2px;
     width: 400px;
     text-align: center;
     
@@ -144,18 +145,9 @@ body {
     transition: 300ms;
     color: var(--color-text);
     background-color: var(--color-background);
+    border: solid 1px;
 }
 
-/*#sure-button{
-    background-color: var(--color-background);
-    width: 30rem;
-    height: 150px;
-    position: relative;
-    margin-top: -130px;
-    margin-left: 50%;
-  
-    
-}*/
 
 @media screen and (max-width: 1195px) {
     .title {
@@ -222,6 +214,10 @@ body {
         width: 40px;
         height: 30px;
     }
+
+    .product-name {
+        height:3.5rem;
+    }
 }
 
 
@@ -248,14 +244,21 @@ body {
     .buttons img {
         width: 14px;
     }
+    .delete-button {
+        margin-top: 1px;
+    }
 
 
     #add-button a {
         font-size: 10px;
     }
+
+    .product-name {
+        height: 2.8rem;
+    }
 }
 
-@media screen and (max-width: 335px) {
+@media screen and (max-width: 350px) {
     .title {
         font-size: 14px;
     }
