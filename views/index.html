@@ -85,14 +85,16 @@
                     </a>
                 </div>
 
-                <div id="choose-delete" style="display: none;">
-                    <h1>Você tem certeza que quer deletar esse item?</h1>
-                    <button class="alternative-delete">Sim</button>
-                    <button class="alternative-delete">Não</button>
-                </div>
+
 
             </div>
         </main>
+
+        <div id="choose-delete" style="display: none;">
+            <h1>Você tem certeza que quer deletar esse item?</h1>
+            <button class="alternative-delete" onclick="alternatives(this.value)" value="yes">Sim</button>
+            <button class="alternative-delete"onclick="alternatives(this.value)" value="no">Não</button>
+        </div>
     </div>
 
     <script src="../Scripts/index.js"></script>

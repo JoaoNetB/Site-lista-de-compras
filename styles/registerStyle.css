@@ -37,11 +37,11 @@
 
 label {
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 25px;
 }
 
 input {
-    font-size: 1.5rem;
+    font-size: 25px;
     color: var(--color-text);
     border: none;
     background-color: var(--color-input);
@@ -68,4 +68,96 @@ input {
     text-decoration: none;
     color: var(--color-text);
     font-size: 1.7rem;
+}
+
+@media screen and (max-width: 1165px) {
+    #content-update  {
+        width: 40rem;
+    }
+
+    #update-name {
+        width: 30rem;
+    }
+
+    #update-quantity {
+        width: 30rem;
+    }
+
+    input {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 885px) {
+    #content-update  {
+        width: 25rem;
+    }
+
+    #update-name {
+        width: 20rem;
+    }
+
+    #update-quantity {
+        width: 20rem;
+    }
+
+    input {
+        width: 20rem;
+        font-size: 18px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #content-update  {
+        width: 20rem;
+    }
+
+    #update-name {
+        width: 18rem;
+    }
+
+    #update-quantity {
+        width: 18rem;
+    }
+
+    input {
+        width: 18rem;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+    #content-update  {
+        width: 15rem;
+    }
+
+    #update-name {
+        width: 14rem;
+    }
+
+    #update-quantity {
+        width: 14rem;
+    }
+
+    input {
+        width: 14rem;
+        font-size: 12px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    #save-button {
+        font-size: 15px;
+    }
+
+    #back-button {
+        font-size: 15px;
+    }
 }
